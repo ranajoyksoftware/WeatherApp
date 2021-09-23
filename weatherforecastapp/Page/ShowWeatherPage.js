@@ -31,15 +31,15 @@ import {fetchData} from '../api';
       }
     
   render() {
-      const {result={}}  =this.props.data;
+    const {result={}}  =this.props.data;
       
     console.log("Hello",this.props.data);
-    var cityName=this.props.data.name;
-    var Current=this.props.data.main.temp;
-    var weatherType=this.props.data.weather[0].main;
-    var max=this.props.data.main.temp_max;
-    var min=this.props.data.main.temp_min;
-    console.log("Hii",cityName);
+    var cityName=this.props.data?.name;
+    var Current=this.props.data?.main?.temp;
+     var weatherType=this.props.data?.weather[0].main;
+    var max=this.props.data?.main?.temp_max;
+    var min=this.props.data?.main?.temp_min;
+    // console.log("Hii",cityName);
     return (
       <Container>
         
